@@ -13,10 +13,10 @@ class VehiclesController < ApplicationController
 
   def create
     @vehicle = Vehicle.new vehicle_params
-    # @vehicle.user = current_user
+    @vehicle.user = current_user
     if @vehicle.save
       puts 'success'
-      redirect_to home_path
+      redirect_to root_path
     else
       puts 'failed'
     end

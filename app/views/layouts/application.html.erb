@@ -18,9 +18,9 @@
 
   <body>
     <div class="nav navbar">
-    <%= link_to('Home', home_path) %>
+    <%= link_to('Home', root_path) %>
     |
-    <%= link_to('Fuel Up', home_path) %>
+    <%= link_to('Fuel Up', root_path) %>
     |
     <% if user_signed_in? %>
       <%= link_to 'Register Vehicle', new_vehicle_path %>

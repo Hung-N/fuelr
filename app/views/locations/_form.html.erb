@@ -1,0 +1,7 @@
+<%= simple_form_for @location do |f| %>
+  <%= f.input :address %>
+  <%= f.input :streetname %>
+  <%= f.input :city %>
+  <%= f.input :postalcode %>
+  <%= f.submit :submit, class: 'btn btn-primary' %>
+<% end %>

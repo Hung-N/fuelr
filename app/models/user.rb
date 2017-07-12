@@ -1,5 +1,6 @@
 class User < ApplicationRecord
-  has_many :vehicles
+  has_many :vehicles, dependent: :destroy
+  has_many :locations, dependent: :destroy
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable

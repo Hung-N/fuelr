@@ -1,6 +1,18 @@
-<h1> nothing to see here ... </h1>
+
 
 
 <% if user_signed_in? %>
-  <p><%= current_user.email %></p>
+  <p><%= current_user.first_name %></p>
 <% end %>
+
+
+<div id="background-main">
+  <div class="overlay">
+    <h1>Welcome to Fuelr</h1>
+
+    <p>The goal here is to get you fueled up while you work.  Our service is intended
+    to increase your daily productivity by reducing the costly time wasted waiting in line
+    at the gas pump.  We believe in the notion that time is money and we want to help you
+    save that time so you can make that money!</p>
+  </div>
+</div>
